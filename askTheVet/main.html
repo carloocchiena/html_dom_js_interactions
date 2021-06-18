@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+
+
+</head>
+<body>
+    <div class="container">
+        
+        <h2>Ask the Vet!</h2>
+
+        <div class="form">
+            
+            <form name="converter">
+                <div class="type">
+                    <p>Pick your Pet type:
+                    <select name="type" id="type">
+                      <option value="dog">Dog</option>
+                      <option value="cat">Cat</option>
+                      <option value="bird">Bird</option>
+                    </select>
+                    </p>
+                  </div>
+                 
+                  <div class="size">
+                    <p>Pick your Pet size:
+                    <select name="size" id="size">
+                      <option value="small">Small</option>
+                      <option value="large">Large</option>
+                    </select>
+                    </p>
+                  </div>
+                  
+                <button type="button" onclick="result()">Submit</button><br><br>
+                <div id="food"></div>
+
+            </form>
+        
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+
+</body>
+</html>

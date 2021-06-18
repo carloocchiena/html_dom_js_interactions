@@ -1,0 +1,1 @@
+A little bit further: 2 html variables and a third func that recalls the whole and return the result

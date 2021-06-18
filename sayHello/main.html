@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <h2>Pick your options</h2>
+        <h3>Confirm when ready and get results</h3>
+
+        <div class="form">
+            <form name="converter">
+                <label for="fName">First name:</label><br>
+                <input type="text" id="fName" name="fName"><br>
+                <label for="lName">Last name:</label><br>
+                <input type="text" id="lName" name="lName"><br><br>
+                <!-- quando il bottone viene premuto, fai partire la funzione con quel nome -->
+                <button type="button" onclick="sayHello()">Submit</button><br><br>  
+                <div id="hello"></div>
+            </form>
+        </div>
+
+    </div>
+
+    
+
+    <!-- JS -->
+    <script src="main.js"></script>
+
+</body>
+</html>

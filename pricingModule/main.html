@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="main.css">
+
+    <title>Pricing</title>
+
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Seleziona i valori </h2>
+        <h3>Vedrai apparire dinamicamente il prezzo</h3>
+    </div>
+
+    <div class="container">
+        <form name="costcalculator">
+            <div class="package-type">
+                <!-- l'oggetto onchange mi fa partire la funzione assegnando anche il valore per il run -->
+            <select name="packageType" id="packageType" onchange="subscription(this.value)">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="enterprise">Enterprise</option>
+            </select>
+            </div><br>
+            <div class="datapoints">
+                <select name="datapoints" id="datapoints" onchange="fee(this.value)">
+                <option value="large">150mln</option>
+                <option value="little">5mln</option>
+                </select>
+            </div><br>
+
+            <div>
+                <p id="result_size"> Qui vedrai il tuo risultato</p>
+                <p id="result_dp"> </p>
+            </div>
+    </div>    
+    <script src="main.js"></script>
+</body>
+</html>
