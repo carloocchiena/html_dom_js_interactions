@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+
+
+</head>
+<body>
+    <div class="container">
+        
+        <h2>The Digital-digital assessment!</h2>
+        
+        <br>
+
+        <h5>Rispondi alle domande seguenti per ricevere in tempo reale </h5> 
+        <h5>un assessment sullo stato di salute digitale della tua azienda.</h5>
+
+        <br>
+
+        <div class="form">
+            
+            <form name="survey">
+                <div class="touchpoint">
+                    <p>Quale è la presenza digitale della tua azienda?</p>
+                    <select name="touchpoint" id="touchpoint">
+                      <option value="smallest">Nessuno \ Non so</option>
+                      <option value="small">Sito Web</option>
+                      <option value="medium">Social Media</option>
+                      <option value="high">Sito & social media</option>
+                      <option value="highest">Tutti questi e anche altri (app, piattaforme, ecommerce, ecc..)</option>
+                    </select>
+                  </div><br>
+
+                  <div class="roles">
+                    <p>Nella tua azienda ci sono figure specialiste del digitale?</p>
+                    <select name="roles" id="roles">
+                      <option value="smallest">Nessuno \ Non so</option>
+                      <option value="small">No \ Non ancora</option>
+                      <option value="medium">No, ma usiamo partner esterni</option>
+                      <option value="high">Sì, alcune</option>
+                      <option value="highest">Sì, anche a livello Senior\Executive</option>
+                    </select>
+                  </div><br>
+                 
+                  <div class="tools">
+                    <p>Utilizzi strumenti digitali per svolgere la tua attività?</p>
+                    <select name="tools" id="tools">
+                      <option value="smallest">Nessuno \ Non so</option>
+                      <option value="small">Si ma in modo non rilevante per l'attività</option>
+                      <option value="medium">Sì, solo per alcune funzioni</option>
+                      <option value="high">Sì, in modo capillare in ogni dipartimento e funzione</option>
+                      <option value="highest">Sì, anche di nostra creazione</option>
+                    </select>
+                  </div><br>
+
+                  <div class="smart">
+                    <p>Nella tua azienda lo smart working è</p>
+                    <select name="smart" id="smart">
+                      <option value="smallest">Non possibile</option>
+                      <option value="small">Possibile ma poco diffuso</option>
+                      <option value="medium">Possibile</option>
+                      <option value="highest">Incentivato e promosso</option>
+                    </select>
+                  </div><br>
+
+                  <div class="inbound">
+                    <p>Utilizzi processi e strumenti per la generazione di lead?</p>
+                    <select name="inbound" id="inbound">
+                      <option value="smallest">Nessuno \ Non so</option>
+                      <option value="small">Si, tradizionali (eventi, network personale, inviti)</option>
+                      <option value="medium">Sì, anche digitali (email marketing, advertising)</option>
+                      <option value="high">Sì, con un strumenti di inbound marketing</option>
+                      <option value="highest">Sì, abbiamo uno o più funnel dedicati</option>
+                    </select>
+                  </div><br>
+
+                  <div class="customer">
+                    <p>Misuri la soddisfazione del cliente?</p>
+                    <select name="customer" id="customer">
+                      <option value="smallest">No \ Non so</option>
+                      <option value="small">Si, sporadicamente, con contatti personali</option>
+                      <option value="medium">Sì, il cliente lascia liberamente recensioni e feedback</option>
+                      <option value="high">Sì, fa parte della nostra strategia di marketing</option>
+                      <option value="highest">Sì, e interveniamo su ogni feedback con un contatto diretto</option>
+                    </select>
+                  </div><br>
+
+                  
+                                  
+                <button type="button" onclick="assessment()">Submit</button><br><br>
+               
+            </form>
+        
+        </div>
+
+        <h4 id="resultTitle"></h4>
+        <div id="result"></div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+
+</body>
+</html>
