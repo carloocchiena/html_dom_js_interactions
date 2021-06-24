@@ -1,3 +1,5 @@
+// test results
+
 var score = 0;
 
 var poorest = "Mmmm, diciamo che non ci stai neanche provando. Mi pare che la tua azienda non sia pronta a competere in un ecosistema digitale. Probabilmente i tuoi competitor ti stanno insidiando e il business non procede più come ai vecchi tempi. Ti suggeriamo di correre ai ripari e rendere la tua azienda dinamica e competitiva; ci sono un sacco di possibilità per far crescere la tua attività!";
@@ -10,8 +12,16 @@ var high = "Accidenti ci stai dando dentro! La tua azienda è sicuramente tra i 
 
 var highest = "Abbiamo un campione! La tua azienda primeggia in quanto a conoscenza e uso di strumenti di digitalizzazione; è forse lo standard al quale ambiscono i tuoi competitor. Sfrutta questa tua conoscenza per educare il mercato e far crescere consapevolezza. Tutti ne beneficieranno, la tua azienda in primis!"
 
+// regex validation (formal validation only)
+
+function validateEmail(inputEmail) {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(inputEmail).toLowerCase());
+}
+
+// converting answers to a score 
+
 function evaluate (choice) {
-    
 
     if (choice === "smallest") {
         score += 0;
@@ -26,6 +36,8 @@ function evaluate (choice) {
     }
 
 }
+
+// main function (linked to the submit button)
 
 function assessment () {
 
@@ -47,6 +59,10 @@ function assessment () {
     var customer = document.getElementById("customer").value;
     evaluate(customer)
 
+    // add here any further questions, with the same structure as above
+
+    // evaluating the score (adjust accordingly if more questions are added; each new question = +5)
+
     if (score < 20) {
         result = poorest;
     } else if (score === 120) {
@@ -59,7 +75,11 @@ function assessment () {
         result = poor;
     }
 
-    //result = score;
+    var email = document.getElementById("email").value;
+
+    if (validateEmail(email) !== true ) {
+        result = "Hai inserito una mail valida?"
+    }
 
     document.getElementById("resultTitle").innerHTML="Il tuo Risultato: ";
     
