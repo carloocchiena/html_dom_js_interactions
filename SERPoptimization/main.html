@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
@@ -22,9 +25,12 @@
 
     <div class="container">
         <form action="snippet">
-            <input type="text" id="titleField" value="" placeholder="Title" onchange="changeTitle(this.value)"><br><br>
-            <input type="text" id="urlField" value="" placeholder="URL" onchange="changeURL(this.value)"><br><br>
-            <input type="text" id="descriptionField" value="" placeholder="Description" onchange="changeDescription(this.value)"><br><br>
+            <input type="text" id="titleField" value="" placeholder="Title" onchange="changeTitle(this.value)">
+            <span id="charactersTitle"></span><span>/580px</span><br><br>
+            <input type="text" id="urlField" value="" placeholder="URL" onchange="changeURL(this.value)">
+            <span id="charactersUrl"></span><span>/385px</span><br><br>
+            <input type="text" id="descriptionField" value="" placeholder="Description" onchange="changeDescription(this.value)">
+            <span id="charactersDescription"></span><span>/990px</span><br><br>
         </form>
 
         <form>
@@ -46,6 +52,9 @@
                 <div id="date"></div> <div id="description"></div>
             </div>
     </div>    
+    
+    <!-- JS -->
     <script src="main.js"></script>
+
 </body>
 </html>
