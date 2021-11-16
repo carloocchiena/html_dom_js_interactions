@@ -30,8 +30,6 @@ function checkDate() {
     }
 }
 
-
-
 function changeTitle(textField) {
     value = textField;
     document.getElementById("title").innerHTML = value;
@@ -49,4 +47,3 @@ function changeDescription(textField) {
     document.getElementById("description").innerHTML = value;
     console.log(value);
 }
-
