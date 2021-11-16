@@ -1,3 +1,6 @@
+// define the function for the radio buttons
+// Rating
+
 var clickRating = 0;
 var clickDate = 0;
 
@@ -16,6 +19,8 @@ function checkRating() {
 
 }
 
+// Date
+
 function checkDate() {
     clickDate ++;
     if (clickDate % 2 != 0) {
@@ -29,6 +34,8 @@ function checkDate() {
         document.getElementById("date").innerHTML = date;
     }
 }
+
+// handle Title, Url and Description
 
 function changeTitle(textField) {
     value = textField;
@@ -46,4 +53,30 @@ function changeDescription(textField) {
     value = textField;
     document.getElementById("description").innerHTML = value;
     console.log(value);
+}
+
+// jquery to run the counters of words
+
+$("#titleField").keyup(updateCountTitle);
+$("#titleField").keydown(updateCountTitle);
+
+function updateCountTitle() {
+    var cs = $(this).val().length;
+    $('#charactersTitle').text(cs);
+}
+
+$("#urlField").keyup(updateCountUrl);
+$("#urlField").keydown(updateCountUrl);
+
+function updateCountUrl() {
+    var cs = $(this).val().length;
+    $('#charactersUrl').text(cs);
+}
+
+$("#descriptionField").keyup(updateCountDescription);
+$("#descriptionField").keydown(updateCountDescription);
+
+function updateCountDescription() {
+    var cs = $(this).val().length;
+    $('#charactersDescription').text(cs);
 }
