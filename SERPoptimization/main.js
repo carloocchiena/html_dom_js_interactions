@@ -12,7 +12,7 @@ function checkRating() {
         rich = "";
     }
 
-    document.getElementById("rating").innerHTML = '<img src="https://cdn-bnbkg.nitrocdn.com/fHTUSkGzNpMecGZasGsrEZDrbMjRPuVx/assets/static/optimized/rev-4e18b2d/wp-content/themes/highervisibility_new/serp-snippet/images/stars.png", width=60px,alt="Ratings">' + rich;
+    document.getElementById("rating").innerHTML = '<img src="https://cdn-bnbkg.nitrocdn.com/fHTUSkGzNpMecGZasGsrEZDrbMjRPuVx/assets/static/optimized/rev-4e18b2d/wp-content/themes/highervisibility_new/serp-snippet/images/stars.png", width=60px, alt="Ratings">' + rich;
 
 }
 
