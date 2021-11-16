@@ -5,14 +5,14 @@ function checkRating() {
     clickRating ++;
     if (clickRating % 2 != 0) {
         document.getElementById("rich-yes").checked = true
-        rich = "***** 9,4/10 - 237 ratings";
+        rich = " 9,4/10 - 237 ratings";
         console.log(rich);
     } else {
         document.getElementById('rich-yes').checked = false;
         rich = "";
     }
 
-    document.getElementById("rating").innerHTML = rich;
+    document.getElementById("rating").innerHTML = '<img src="https://cdn-bnbkg.nitrocdn.com/fHTUSkGzNpMecGZasGsrEZDrbMjRPuVx/assets/static/optimized/rev-4e18b2d/wp-content/themes/highervisibility_new/serp-snippet/images/stars.png", width=60px,alt="Ratings">' + rich;
 
 }
 
@@ -29,6 +29,8 @@ function checkDate() {
         document.getElementById("date").innerHTML = date;
     }
 }
+
+
 
 function changeTitle(textField) {
     value = textField;
