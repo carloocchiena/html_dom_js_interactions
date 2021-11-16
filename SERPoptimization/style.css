@@ -1,0 +1,27 @@
+.container {
+    margin: 10px;
+}
+
+#url {
+    color: gray;
+    font-size: 15px;
+}
+
+#title {
+    color: blue;
+    font-size: 20px;
+}
+
+#rating {
+    color:gray;
+    font-size: 15px;
+}
+
+#date {
+    float: left;
+}
+
+#description {
+    color: black;
+    font-size: 16px;
+}
