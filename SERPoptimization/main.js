@@ -30,8 +30,6 @@ function checkDate() {
     }
 }
 
-
-
 function changeTitle(textField) {
     value = textField;
     document.getElementById("title").innerHTML = value;
