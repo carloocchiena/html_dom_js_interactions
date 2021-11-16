@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        
+        <h2>Digital SEO assessment</h2>
+        <br>
+
+        <h5>Rispondi alle domande seguenti per ricevere in tempo reale </h5> 
+        <h5>un assessment sullo stato di salute digitale della tua azienda.</h5>
+        <br>
+
+        <div class="form">
+            
+            <form name="survey">
+                <div class="touchpoint">
+                    <p>Dove pubblichi i contenuti della tua azienda?</p>
+                    <select name="touchpoint" id="touchpoint">
+                      <option value="smallest">Contenuti?</option>
+                      <option value="small">Sito Web</option>
+                      <option value="medium">Social Media</option>
+                      <option value="high">Sito & social media</option>
+                      <option value="highest">Tutti questi e anche altri (siti di terze parti, offline, etc.)</option>
+                    </select>
+                  </div><br>
+
+                  <div class="roles">
+                    <p>Nella tua azienda ci sono figure specialiste del digitale?</p>
+                    <select name="roles" id="roles">
+                      <option value="smallest">Nessuno \ Non so</option>
+                      <option value="small">No \ Non ancora</option>
+                      <option value="medium">No, ma usiamo partner esterni</option>
+                      <option value="high">Sì, alcune</option>
+                      <option value="highest">Sì, anche a livello Senior\Executive</option>
+                    </select>
+                  </div><br>
+                 
+                  <div class="tools">
+                    <p>Utilizzi strumenti digitali per svolgere la tua attività?</p>
+                    <select name="tools" id="tools">
+                      <option value="smallest">Nessuno \ Non so</option>
+                      <option value="small">Si ma in modo non rilevante per l'attività</option>
+                      <option value="medium">Sì, ma solo quelli gratuiti</option>
+                      <option value="high">Sì, per alcune figure e funzioni</option>
+                      <option value="highest">Sì, fanno parte integrante del nostro lavoro </option>
+                    </select>
+                  </div><br>
+
+                  <div class="smart">
+                    <p>Con che frequenza controlli le query che portano traffico alle tue properties?</p>
+                    <select name="smart" id="smart">
+                      <option value="smallest">Eh?</option>
+                      <option value="small">L'ho fatto una volta </option>
+                      <option value="medium">Uno specialista ci segue e ci aiuta periodicamente</option>
+                      <option value="highest">Lo facciamo internamente, frequentemente</option>
+                    </select>
+                  </div><br>
+
+                  <div class="inbound">
+                    <p>Sai quali siano i parametri vitali per scrivere un contenuto SEO oriented?</p>
+                    <select name="inbound" id="inbound">
+                      <option value="smallest">No, non saprei</option>
+                      <option value="small">No, ma mi affido a professionisti</option>
+                      <option value="medium">Sì, ma non sembre li seguiamo alla lettera</option>
+                      <option value="high">Sì, e cerchiamo di rispettarli</option>
+                      <option value="highest">Sì, è la nostra ossessione</option>
+                    </select>
+                  </div><br>
+
+                  <div class="customer">
+                    <p>Come si posiziona la tua azienda in SERP?</p>
+                    <select name="customer" id="customer">
+                      <option value="smallest">SERP?</option>
+                      <option value="small">Non siamo a oggi reperibili</option>
+                      <option value="medium">Siamo reperibili solo con query branded</option>
+                      <option value="high">Siamo reperibili solo con query molto specifiche o geolocalizzate</option>
+                      <option value="highest">Abbiamo uno o più contenuti in prima pagina</option>
+                    </select>
+                  </div><br>
+
+                  <div class ="email">
+                    <label for="email">Inserisci la tua mail per ricevere il risultato:</label><br><br>
+                    <input type="email" id="email" required>
+                  </div><br>
+                                  
+                <button type="button" onclick="assessment()">Invia</button><br><br>
+               
+            </form>
+        
+        </div>
+
+        <h4 id="resultTitle"></h4>
+        <div id="result"></div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+
+</body>
+</html>
