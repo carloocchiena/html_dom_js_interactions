@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <h2>Compound Interest + Rates Calculator</h2><br>
+        <p>
+            The tool assume a yearly amount deposited at the end of each year.<br>
+            For checking purposes I evaluated the tool against <a href="https://economiapertutti.bancaditalia.it/calcolatori/calcolatore-dell-interesse/" target="_blank">Banca d'Italia calculator.</a>
+        </p>
+
+        <div class="form">
+            <form name="amount">
+                <label for="fName">Initial Amount</label><br>
+                <input type="text" id="initial" name="initial" placeholder="1000"><br><br>
+                <label for="fName">Recurring Amount</label><br>
+                <input type="text" id="recurring" name="recurring" placeholder="100"><br><br>
+                <label for="fName">Interest</label><br>
+                <input type="text" id="interest" name="interest" placeholder="0.1"><br><br>
+                <label for="fName">Time to Maturity</label><br>
+                <input type="text" id="maturity" name="maturity" placeholder="5"><br><br>
+                <button type="button" onclick="calculator()">Calculate!</button><br><br>
+            </form>
+            
+            <p>The amount at the end of the maturity period is:</p>
+            <p id="result"></p>
+
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+
+</body>
+</html>
