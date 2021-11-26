@@ -1,5 +1,4 @@
 
-
 function calculator() {
 
     var initial = parseInt(document.getElementById("initial").value);
